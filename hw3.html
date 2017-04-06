@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <!-- I used Firefox. -->
+        <style>
+            .main {
+                text-align: center;
+            }
+            .main:before {
+                pointer-events: none;
+                background: url("max300.png") center/cover;
+                content: '';
+                position: absolute;
+                left: 0; right: 0; top: 0; bottom: 0;
+                opacity: 0.4;
+            }
+            .text {
+                position: relative;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <audio src="max300.mp3" autoplay loop>
+            <p>If you see this, that means your browser doesn't support playback of media files.</p>
+        </audio>
+        <div class = "main">
+            <div class = "text">
+            	<p id="intro"></p>
+                <table border="1" frame="box" id="map" style="width:25%;text-align:center;" align="center">
+                </table>
+                <p id="status">
+                </p>
+                <div id="buttons">
+                    <p>Please click an arrow to move!</p>
+                    <img src="up.png" width="5%" id="upB"/>
+                    <br/>
+                    <img src="left.png" width="5%" id="leftB"/>
+                    <img src="down.png" width="5%" id="downB"/>
+                    <img src="right.png" width="5%" id="rightB"/> 
+                </div>
+                <p id="event">
+                </p>
+                <div id="fightSeq" style="visibility:hidden;">
+                	<p id="fightResult"></p>
+                	<p id="fightText"></p>
+                	<div id="YesNo" style="visibility:hidden;">
+                        <img src="yes.png" width="5%" id="fightYes"/>
+                        <img src="no.png" width="5%" id="fightNo"/>
+                	</div>
+                </div>
+                <script crossorigin="anonymous" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" src="https://code.jquery.com/jquery-3.2.0.min.js">
+                </script>
+               	<script src="main.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
